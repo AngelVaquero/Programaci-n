@@ -1,0 +1,43 @@
+ATAJOS E INSTRUMENTOS PARA USAR VISUAL
+control+shift+p = barra de comandos
+La barra de la derecha es la barra de herramientas principales:
+1º Explorador de archivos
+2º Buscador de pito dentro de un archivo abierto
+3º Control de versiones; éste utiliza GIT
+4º Debugger
+5º Marketplace
+6º Abajo a la izquierda: iniciar sesión para vincular en todos los dispositivos
+7º Engranaje: configuración preferencias
+Bara de abajo con restricted mode = barra de estado
+Los dos iconos nos muestra si nuestro código tiene algun error
+En la parte derecha con letras y números (ej: Ln13, Col 56): nos indica el posicionamiento del cursor
+Para buscar una línea de códidgo arriba en el buscador escribiremos por ejemplo: :5, 10 y nos llevará a esa línea 5 y columna 10
+En Spaces nos muestra el espacio que estamos usando en la edicción de nuestro código que se puede modificar si pulsamos sobre él
+Seguidamente aparece UTF-8 que es la codificación más popular en internet
+Al lado encontramos CR= Carraige Return, LF = Line feed o CRLF = Combinación de las anteriores. Esto proporciona al ordenador saber donde se encuentra los saltos de línea por la codificación anterior UTF-8.
+*IMPORTANTE: SI AL TRABAJAR EN EQUIPO SE UTILIZAN SISTEMAS OPERATIVOS DISTINTOS PODRÍA HABER PROBLEMAS CON ÉSTE APARTADO YA QUE CADA S.O UTILIZA CR, LF O CRLF.
+Y por último donde se encuentra YAML en éste caso nos muestra el tipo de archivo que estamos usando y si pulsamos sobre él podemos cambiar el lenguaje de código que queramos usar sin necesidad de extensiones.
+Barra arriba derecha para cambiar el modo de ver vscode
+Barra a la izquierda = todas las opciones
+
+En las opciones del explorer de la carpetas
+1º Crear archivos
+2º Crear carpetas
+3º Refrescar el explorer
+4º Colapsar (Cierra las carpetas para que no esté abierto todo el contenido)
+
+El primer archivo que vamos a crear es Markdown
+Control + S = Guardar (El circulo blanco del archivo nos indica que no está guardado)
+Alt + Z = Modificar salto de línea
+En el buscador del explorador podemos buscar las palabras que queramos para saber cuantas veces o donde aparecen obviando si se encuentra dentro de otra palabra más larga o si tienen alguna letra mayúscula o no. Si cambiar esto ultimo pulsamos en el la opción Aa (match case) que aparece a la derecha. Si queremos que no nos seleccione una palabra que esté dentro de otra más larga usamos el icono que está al lado del anterior.
+Debajo aparece la opción Replace que esto nos cambiará todas las palabras seleccionadas anteriormente por la nueva palabras que escribamos, y para realizar la acción pulsaremos en la última opción de la derecha que nos preguntará si queremos realizar esta opción.
+CONTROL + SHIFT + Ñ = Abrir terminal
+CONTROL DE VERSIONES (GIT)- Como utilizarlo
+1º Agregar a stage un archivo
+Encima de cada archivo podremos abrir el archivo, descartar los cambios o agregar los cambios a stage, todo por orden de signos.
+Para agregarlo debemos: 
+. Pulsar el simbolo + (agregar stage).
+. Escribir en el apartado message "commit inicial".
+. Seleccionamos commit.
+. Nos muestra una ventana de error. Nos indica que tenemos que crearnos nuestro user name y email.
+. Pulsamos "Open Git Log".
