@@ -33,7 +33,7 @@ En el buscador del explorador podemos buscar las palabras que queramos para sabe
 Debajo aparece la opción Replace que esto nos cambiará todas las palabras seleccionadas anteriormente por la nueva palabras que escribamos, y para realizar la acción pulsaremos en la última opción de la derecha que nos preguntará si queremos realizar esta opción.
 CONTROL + SHIFT + Ñ = Abrir terminal
 CONTROL DE VERSIONES (GIT)- Como utilizarlo
-1º Agregar a stage un archivo
+1º Agregar a stage un archivo y subirlo a github
 Encima de cada archivo podremos abrir el archivo, descartar los cambios o agregar los cambios a stage, todo por orden de signos.
 Para agregarlo debemos: 
 . Pulsar el simbolo + (agregar stage).
@@ -48,3 +48,16 @@ Para agregarlo debemos:
 . Hacer click de nuevo en visual code en el botón "commit"
 . Hacemos click en publish branch.
 . Iniciar sesión en github con los datos creados.
+. Ya podemos subir a nuestro github nuestro repositorio privado o público.
+. Posteriormente nos abrirá una ventana que nos pedirá conectarnos a github y lo haremos mediante browser.
+2º Crear una rama
+. Dentro de las opciones Source en "..." accedemosa ...    
+. Branch o pulsar en la barra de estado en "Main".
+. Elegimos Create new branch.
+. Elegiremos el nombre de la rama.
+. Ya tendremos la nueva rama creada.
+. Ahora en el botón azul aparece el botón Publish Branch. Y hacemos click.
+. Realizaremos nuevos cambios para probar esto.
+. Y agregamos los camnios al stage.
+. Y escribimos en message el nombre que queremos darle a este cambio. Y pulsamos Commit.
+
