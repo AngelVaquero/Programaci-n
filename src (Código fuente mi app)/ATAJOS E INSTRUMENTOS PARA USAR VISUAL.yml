@@ -45,4 +45,6 @@ Para agregarlo debemos:
 . Abrir Terminal de Git (Git Bash en el buscador windows)
 . Copiar las líneas de código de email y nombre individualmente en el terminal.
 . Cambiaremos en cada línea el correo o nombre predeterminado por uno nuestro.
-Hacer click de nuevo en visual code en el botón "commit"
+. Hacer click de nuevo en visual code en el botón "commit"
+. Hacemos click en publish branch.
+. Iniciar sesión en github con los datos creados.
