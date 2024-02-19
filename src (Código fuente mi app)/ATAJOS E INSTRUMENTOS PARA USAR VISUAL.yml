@@ -1,4 +1,4 @@
-ATAJOS E INSTRUMENTOS PARA USAR VISUAL
+<!-- ATAJOS E INSTRUMENTOS PARA USAR VISUAL
 control+shift+p = barra de comandos
 La barra de la derecha es la barra de herramientas principales:
 1º Explorador de archivos
@@ -69,4 +69,101 @@ Para agregarlo debemos:
 4. Eliminar rama:
 . Volvemos a seleccionar los tres puntos en source.
 . Elegimos branch -> delete branch. 
+
+DEBUGER
+. Abrir los 3 puntos de soruce
+. Elegimos clone. (ingresar url's de proyectos que queremos clonar) (Otra función es clonefrontGithub donde aparacen los proyectos que la gente sube a GitHub)
+.  Hemos abierto un ejemplo de proyecto.
+. Seleccionamosel archivo index.html.
+. Vamos al apartado debuger y pulsamos en run and debug y se nos abrirá el proyecto en el buscador que deseemos.
+. Una vez vista nuestra aplicación en el buscador y ser tan simple, vamos a cambiarla usando BREACKPOINTS.
+. En este proyecto vemos que incluye un archivo de javascript con la siguiente línea:
+<script src="index.js"></script>
+. También vemos que ejecuta una función en el caso de hacer click sobre el botón con el nombre asignado con la siguiente línea:
+<button onclick="clickeando()">Clickeame</button>
+. Ahora nos vamos al archivo que hemos denominado index.js.
+. Se ha creado una función que define una constante:
+const fn = () => {
+    const miString = "soy un string!"
+}
+. En la siguiente línea se crea una variable:
+let b = miString + "muy feliz"
+Se denomina b y es la concadenación de miString y "muy feliz".
+. Y la última línea que imprime en la consola la variable (b):
+console.log (b)
+. Seguidamente tenemos una línea que ejecuta la función creada anteriormente:
+fn()
+. Y por último encontramos la función que se va a ejecutar cuando pulsemos el botón "clickame".
+const clickeado = () => {
+    let a = "cerdo feliz"
+
+    console.log (a)
+}
+Esto asigna una variable con el nombre "a" con un string de "cerdo feliz" y la imprime en la consola.
+
+COMO HACER PARA CONOCER EL VALOR DE UNA VARIABLE:
+Muchos desarrolladores escriben "console.log" y el nombre de la variable o imprimir en pantalla las variables que ellos están escribiendo para ver el valor. Así eventualmente se pueden encontrar ERRORES.
+Pero esta forma es muy lenta para poder depurar una aplicación.
+DEBUGER PARA REALIZAR LAS ACCIONES ANTERIORES MÁS RÁPIDO
+En el ejemplo que tenemos en html. queremos encontrar el valor de la constante b, justo después de que se asigne la concadenación " miString + "muy feliz" ".
+Para ello haremos lo siguiente:
+. Tenemos que poner un breackpoint (Detener la ejecución del script dentro de la función y nos va a indicar las variables en el contexto de la función.
+. Para poner el breackpoint hacemos click en la parte en negro de la izquierda justo al lado de los números de línea encima de la linea donde queramos que se detenga)
+. En nuestro caso lo haremos en la segunda línea.
+. Ahora abriremos el archivo de index.html. (Tiene que estar en el apartado que queramos abrir)
+. Pinchamos el run and debug.
+. Nos abre de nuevo el visualcode con las dos pestañas de index abiertas, con unos botones arriba, y las variables a la izquierda.
+. Aparece en la parte de las variables, el apartado Local fn que son todas las funciones que aparacen en la función fn.(El código de javascript siempre se ejecuta de derecha a izquierda)
+. Los signos de la parte superior que han aparecido son: (de izquierda a derecha) Continue que permite que se siga ejecutandose el script y no volverá a parar en el breackpoint si nosotros no los cambiamos, Step Over que hará que el script pase a la siguiente línea, Step into que hace que si estamos ejecutando una función se meta dentro de la definición de la función para poder depurar línea por línea la función, Step out que sería salir de la función si ya no nos interesa seguir depurando ésta, Restart que reinicia, Stop que hace detener la ejecución del script.
+. Pulsaremos Step Over y pasamos a la línea 3. Volvemos a hacer click en Step Over para pasar a la línea 4. Esto hace que se definan las constantes y aparece el valor en la parte izquierda.
+Si volvemos a usar Step Over pasaremos a la línea 5 que hará que se ejecute el console.log y esto hará que aparezca un Return Value que se encuentra undefined que significa que la función no retornó nada.
+. Ahora veremos lo que imprimió en la terminal el console.log
+. Hacemos click en la parte de arriba en el cuadrado con una línea en la parte inferior al lado de minimizar las páginas.
+. En esta ventana hay 4 apartados: Problems, Output, Debug Console y terminal.
+. En debug Console nos aparecerá todos los strings o todos los console.log que nosotros hayamos escrito o las instrucciones que sea dependiendo del lenguaje para mostrar en pantalla los valores que estamos depurando.
+. En este caso aparece "Soy un string! muy feliz" que equivale al console.log (b).
+. Ahora haremos que se complete la ejecución del script pulsando en el primer icono (Continue)
+. Vamos a quitar el primer breackpoint y vamos a colocarlo en la función de clickeado en la línea 10.
+. Pulsamos en Return para volver a ejecutar el debugger.
+. Nos vuelve a mostrar el mismo mensaje dentro de debug console.
+Para poder ver lo que ocurre cuando pulsamos en el botón de clickeado debemos: Pulsamos en chrome en el botón de clickeame y vemos como se detubo en la línea del breackpoint.
+. Pulsamos de nuevo en step over y vemos como aparece la función a definida. Pero en el debug console no se esá imprimiendo el valor de a.
+. Pulsando otra vez en step over aparecerá impreso en valor de a en debug console.
+*IMPORTANTE* CUANDO ESTEMOS TRABAJANDO CON EL DEPURADOR LAS LÍNEAS EN LAS QUE NOS ENCONTRAMOS NO SE VAN A EJECUTAR HASTA QUE NO LAS HAYAMOS PASADO.
+
+EXTENSIONES.
+Nos permite extender las funcionalidades de VSCODE. Y lo más importante nos permite personalizar vscode a nuestro gusto.
+Primero instalaremos extensiones de temas a vscode. 
+SUGERENCIAS: 
+. ANDROMEDA.
+. CODE BLUE.
+. MATERIAL.
+. PALENIGHT.
+. GRUVBOX.
+Para cambiar eltema pulsamos las teclas: control + shift + p y escribimos THEME y elegiremos el apartado control theme.
+
+ATAJOS DE TECLADO:
+. Para ir del inicio de línea hasta el final de esta línea buscamos la tecla : Fin
+. Y el movimiento contrario es pulsando la letra: Inicio.
+. Con la tecla alt pulsada y moviendo la flecha izquierda o derecha te podrás mover entre tabulaciones de línea.
+. Con shift + izquierda o derecha irás subrayando palabras.
+. Si lo anterior lo realizas pulsando además control, se irá subrayando por palabras y no por letras.
+. Para intercambiar líneas de arriba y abajo pulsamos Alt + arriba o abajo.
+. Shift + arriba o abajo subraya las diferentes líneas.
+. Control + Ç hace que la línea sea una anotación o comentario. Para hacer con más líneas primero subrayos las líneas que quiera hacerlas comentario. 
+. Control + Espacio para volver a abrir un intellisense.
+. Control P nos permitirá buscar archivos que tenemos abiertos o se encuentran dentro del proyecto.
+
+INTELLISENSE.
+Sugerencias que te da visualcode al escribir un comando que termina en . como por ejemplo: console.
+
+SNIPPETS.
+Está opción nos permite crear snippets para un proyecto o para el uso del visual code en general.
+Snippets son saltos en los diferentes funciones para saltar más rapidamente entre líneas y lenguajes que  vamos a crear.
+
+-->
+
+
+
+
 
