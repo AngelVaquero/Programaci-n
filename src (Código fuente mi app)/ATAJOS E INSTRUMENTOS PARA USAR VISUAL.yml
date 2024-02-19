@@ -153,6 +153,8 @@ ATAJOS DE TECLADO:
 . Control + Ç hace que la línea sea una anotación o comentario. Para hacer con más líneas primero subrayos las líneas que quiera hacerlas comentario. 
 . Control + Espacio para volver a abrir un intellisense.
 . Control P nos permitirá buscar archivos que tenemos abiertos o se encuentran dentro del proyecto.
+. Control + b oculta el menú de la derecha
+. Para crear atajos personalizamos pulsamos File en la parte superior, en el apartado preferences buscamos la opción keyboard shortcuts.
 
 INTELLISENSE.
 Sugerencias que te da visualcode al escribir un comando que termina en . como por ejemplo: console.
