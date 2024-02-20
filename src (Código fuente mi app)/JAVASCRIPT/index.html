@@ -31,8 +31,94 @@
 . UpperCamelCase.
 . camelCase.
 . snake_case./
-19.
- -->
+
+TIPOS DE DATOS.
+Primitivos: Number, String, Boolean, Undefined, Null.
+De referencia: Array, Object, Functions, clases.
+La diferencia entre ambos es:
+En la memoria RAM se encuentran dos bloques de guardado:
+El stack donde se guardan los datos primitivos; esto hace que los datos guardados aquí sean fijos y no se pueden modificar, y tiene la característica de ser una memoria rápida.
+El heap donde se guardan los datos de referencia; esto hace que si queremos ver que dato se encuentra en el espacio donde ha sido guardado, en vez de encontrar el dato, encontraremos una referencia de dónde está guardado en ese momento, en otro espacio de la memoria.
+. Primitivos: no hace falta escribir las comillas en el valor de la variable, un ejemplo como: let numero = 1;
+Para ver que tipo de datos es nuestra variable, al terminar de escribir ésta con su valor, colocaremos el ratón sobre el nombre de la variable.
+Números = Number
+Texto = String
+True y False = Boolean
+Valor no definido = Undefined
+Valor nulo = Null
+Una variable puede cambiar su valor en el futuro sin tener que escribir let, simplemente escribiendo el nombre de la variable y el valor que queramos darle. Por ejemplo: let nombre =.... En la siguiente línea escribiríamos nombre = "..."
+Para que esto no ocurra accidentalmente, en vez de usar let para esta variable, usaremos Const que dará error si intentamos cambiar el valor de ésta.
+
+TIPOS DE LENGUAJE
+1º Tipado Estático.
+En el momento de crear una variable le daremos el tipo de variable que vayamos a querer que tenga como puede ser string, number, null,...
+Si se quisiera cambiar el valor de un string a un number, por ejemplo, no me dejaría hacerlo, por eso se llama tipado estático. Java es tipado estático.
+2º Tipado Dinámico.
+No es necesario asignarle el tipo de variable en el momento de crear una, y si más adelante queremos cambiar el valor de string por un number, no dará error. Esto se conoce como Tipado Dinámico. Javascript es tipado dinámico.
+
+Escribiendo dentro del valor de console (typeof + el nombre de la variable) nos imprimirá en la consola el tipo de variable que es.
+Shift + Alt + flechas = Duplicar líneas.
+Al usar typeof y sólo cuando sea una variable null devolverá en consola "Object" y no "Null"
+Control + P nos abre una ventana donde podemos buscar un archivo para poder abrirlo.
+La manera oficial de escribir comentarios con múltiples líneas es escribir /**/ y entre medias hacer el comentario.
+
+OBJETOS.
+Esto es un tipo de dato de referencia.
+Agrupación de datos que hace sentido tenerlos juntos. Ejemplo:
+LÁPIZ
+. Color.
+. Longitud.
+. Marca.
+. Etc..
+Para realizarlo escribiremos unas variables que tengan sentido entre ellas.
+Posteriormente escribiremos la misma variable con un nombre que agrupe todas y también = {}
+Dentro de estos corchetes en líneas diferentes iremos escribiendo el nombre de las variables con dos puntos. Ej: Nombre:
+Seguidamente pondremos el valor de éstas con una coma la final.
+A esta línea se le conoce como par llave-valor.
+Llave al nombre de la propiedad y valor al valor de ésta.
+También he podido comprobar que si las variables ya han sido creadas, simplemente con incluirlas dentro de los corchetes en la misma línea con comas, y sin necesidad de añadirles el valor, dan el mismo resultado.
+Si queremos conocer el valor de una propiedad y no del objeto completo en consola escribiremos: console.log(objeto.propiedad); o console.log(objeto["Propiedad"]);
+
+MOIFICAR UNA PROPIEDAD.
+Escribimos el objeto.Propiedad = Nuevo valor; o Objeto.Propiedad["Nuevo Valor"]. Ésta última sirve para alterar el valor de una propiedad que no conoces o todas las propiedades de un objeto.
+Porque podemos definir por ejemplo una variable let Llave = "Edad"; y cambiar en el Objeto.propiedad el nuevo valor por Llave sin comillas.
+
+BORRAR PROPIEDAD.
+Usamos la palabra delete para borrar una propiedad.
+Ej: delete Objeto.Propiedad;
+Y añadimos el console.(Objeto)
+
+ARRAYS (Arreglo o colección)
+Para realizar arrays debemos crear una variable con =[todas las opciones que queramos entre '' y comas];
+Si queremos imprimir en consola sólo una opción en concreto escribiremos el console.log(Array[Númerod de la opción]);
+Si queremos añadir una nueva opción en otra línea debemos escribir: El array[Nuevo número no usado] = 'Nombre de esa opción';
+Si elegimos un nuevo número que no es consecutivo del listado de opciones, nos contarán esos espacios vacíos en el arrays y nos indicarán que están vacios, hasta llegar al número que hemos elegido.
+Escribiendo un array con punto como por ejemplo: Animales.
+Podremos acceder a numerosos métodos de arrays en un listado del propito arrays elegido.
+Si elegimos el método Array.length dentro de un console.log nos imprimirá en consola el número de opciones del array.
+
+FUNCIONES.
+Bloques fundamentales dentro de la construcción las aplicaciones.
+Las vamos a usar durante toda la vida como desarrollador Javascript.
+Funciones son procedimientos o listado de instrucciones que las aplicaciones deben ejecutar.
+Debemos usar la palabra function más el nombre de la función() y {
+}
+Dentro de los corchetes escribimos la acción que queremos que realice esta función. 
+Y para que esta función se imprima y aparezca debemos llamarla escribiendo más adelante:
+NombreDeLaFunción ();
+Con estas funciones también podriamos retornar valores.
+Por ejemplo: function suma() {
+    return 2 + 2;
+}
+Return nos permite reutilizar código que se encuentra dentro de estas funciones. Estas calcularán algo y después nos devolverá el valor que calcularon para usarlo más adelante.
+Para hacer esto lo hacemos de la siguiente manera, por ejemplo:
+let Resultado = Suma():
+Y console.log(Resultado);
+Estas funciones no tienen mucho sentido porque sólo nos devuelve 1 resultado, para eso se pueden realizar funciones más flexibles (Argumentos y parámetros)
+
+ARGUMENTOS Y PARÁMETROS
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,6 +128,6 @@
 </head>
 <body>
     Hola a todos.
-    <script src="01-Tipos/01-Variables.js"></cript>
+    <script src="01-Tipos/08-Funciones.js"></cript>
 </body>
 </html>
