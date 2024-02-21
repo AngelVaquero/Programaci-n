@@ -182,6 +182,20 @@ Se usa para comparar variables entre sí o una variable entre otra cosa. Por eje
 . Lógicos.
 Hay tres tipos:
 And (&&), or (||), not(!).
+Estos operadores lógicos podemos utilizarlos para realizar operaciones de Short-circuit. Estos son como cortes de circuito cuando se trabaja con redes eléctricas pero más seguros.
+Short-Circuit
+Lo primero que tenemos que hacer es ver que valores evalúan en falso. Esto se debe a que cuando estemos usando and o or, estaremos usando valores como strings, objetcs o arrays y esto nos va a devolver true o false dependiendo de qué situaciones.
+Ejemplo:
+En la consola de Chrome escribimos [] ||(or) {} y nos devolverá un valor y si escribimos [] &&(and) {} nos devolverá otro valor. Dependiendo del operador que usemos nos devolverá el último que value en true (&&) cuando todos hayan evaluado en true, o , el primero que haya evaluado en true (||)
+Es más rápido mirar cuales son los valores que evaluan en false porque son más limitados.
+Todos los valores escritos en el archivo falsy.js son denominados falsy.
+Ejemplo: Existen aplicaciones que te permiten entrar en ellas sin estar registrado, para ver que es lo que tiene.
+Para ello escribimos:
+let Nombre = ''
+let UserName = Nombre || 'Anónimo';
+Esto hace que si el usuario no tiene un nombre en la aplicación aparezca como anónimo o si tiene que le aparezca el que haya creado que debería estar contenido entre las comillas.
+Si en vez de || queremos usar el operador &&.
+Se utiliza para ejecutar funciones siempre y cuando la primera haya evaluado en true. Un ejemplo está en el archivo falsy con las funciones fn.
 . Bitwise.
 
 -->
@@ -195,6 +209,6 @@ And (&&), or (||), not(!).
 </head>
 <body>
     Hola a todos.
-    <script src="02-Operadores/04-Lógicos.js"></cript>
+    <script src="02-Operadores/05-Falsy.js"></cript>
 </body>
 </html>
