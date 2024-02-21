@@ -117,6 +117,73 @@ Y console.log(Resultado);
 Estas funciones no tienen mucho sentido porque sólo nos devuelve 1 resultado, para eso se pueden realizar funciones más flexibles (Argumentos y parámetros)
 
 ARGUMENTOS Y PARÁMETROS
+Para usar un argumento en una función suma, añadiremos dentro de los paréntesis "suma()" el nombre de una variable, Ej: suma(a).
+También debemos modificarlo en return que pasaría de "2 + 2", a "a + 2"
+Más abajo le añadiremos un valor a esta "a" escribiendo la variable let, dandole un nombre a este valor de suma y con un igual y suma(numeroejemplo); Ej: let Resultado = suma(5);
+Por último para imprimirlo en consola escribimos resultado en el comando de consola.log.
+
+La "a" dentro de la función suma se le denomina parámetros y al 5 en el ejemplo dentro de la variable se le denomina argumentos.
+
+Para añadir múltiples argumentos podemos incluirlos en los paréntesis con una coma por ejemplo: 5, 6.
+Y tendríamos que modificar el parámetro añadiéndole otro valor a suma. Por ejemplo: suma(a, b).
+También tendremos que cambiarlo en el return que pasaría de "a + 2" a "a + b".
+Con console.log(arguments); podemos acceder a todos valores o argumentos de una función.
+Pero hay otra manera diferente de desempeñarlo.
+
+DECLARACIONES Y EXPRESIONES.
+Cada lenguaje va a emplear unas expresiones y declaraciones que cada uno crea conveniente. Pero hay algunas generales.
+Para JAVASCRIPT tenemos:
+EXPRESSIONS -> Expresiones
+Cualquier línea de código que evalue en un valor por ejemplo:
+. 4 + 6 = 10
+. x = 4
+. MiFunción()
+Cada vez que el código hace algo y puedes obtener un valor de éste estamos ante una expression.
+Si la porción de código no hace nada, como declarar una función o declarar una variable estamos ante una declaration.
+Si éste te permite escribir lógica o realizar ciertas tareas estamos ante un statement.
+Por ejemplo: sino le puedes hacer un console.log como puede ser console.log(let), console.log(const);
+va a ser una declaración.
+Pero si le permite hacer un console.log es una expresión.
+
+DECLARATION -> Declaración (declarando algo de forma oral)
+En programación se les llama cuando vas a crear algo que lo vas a referenciar en un futuro. Ejmeplos de estas son:
+. let
+. const
+. function
+. function*
+. async function
+. async function*
+. class
+. export/import
+
+STATEMENT -> Declaración (declarando algo de forma escrita)
+Son declaraciones que es probable que no quieras referenciar en un futuro. Por ejemplo:
+. it
+. for
+. else
+. switch
+
+OPERADORES.
+Estos operadores nos van a permitir crear estas expresiones.
+Estas expresiones nos permitirán crear algoritmos.
+Y con estos algoritmos vamos a poder solucionar problemas.
+Tipos de operadores:
+. Aritméticos.
+Los usamos para poder realizar operaciones matemáticas.
+Dentro del console.log de una operación tras una coma podemos añadir bajo '' un string si es necesario.
+Operadores de incrementar y decrementar (decrement).
+El valor de incrementar se puede incluir antes o después de la variable. Si lo escribimos delante "++a" va a incrementar el valor de "a" a 1, es decir, si a = 5, ahora a = 6.
+Y si colocamos los "++" detrá hará lo mismo.
+Para decrementar escribimos "--" sustituyendo a "++"
+. Asignación.
+Se usa para cambiar el valor de una variable sin necesidad de crear otra variable distinta con: +=, -=, etc...
+. Comparación.
+Se usa para comparar variables entre sí o una variable entre otra cosa. Por ejemplo: a = 10, console.log (a > 5); Nos devolverá un boolean de true o false.
+. Lógicos.
+Hay tres tipos:
+And (&&), or (||), not(!).
+. Bitwise.
+
 -->
 
 <!DOCTYPE html>
@@ -128,6 +195,6 @@ ARGUMENTOS Y PARÁMETROS
 </head>
 <body>
     Hola a todos.
-    <script src="01-Tipos/08-Funciones.js"></cript>
+    <script src="02-Operadores/04-Lógicos.js"></cript>
 </body>
 </html>
