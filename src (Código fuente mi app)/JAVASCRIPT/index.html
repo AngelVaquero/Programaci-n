@@ -197,7 +197,42 @@ Esto hace que si el usuario no tiene un nombre en la aplicación aparezca como a
 Si en vez de || queremos usar el operador &&.
 Se utiliza para ejecutar funciones siempre y cuando la primera haya evaluado en true. Un ejemplo está en el archivo falsy con las funciones fn.
 . Bitwise.
+Bit: es un digito en binario (0 o 1)
+Byte: es la combinación de 8 bites, aquí se pueden almacenar caracteres, numeros, simbolos, o también, se pueden almacenar valores numéricos. 
+Byte:00000000 = 0
+Byte:00000001 = 1
+Byte:00000010 = 2
+Byte:00000011 = 3
+Byte:00000100 = 4
+Byte:00000101 = 5
+Byte:00000110 = 6
+Decimal: 0,1,2,3,4,5,6,7,8,9
+Biario: 0,1
 
+Orden de Operadores.
+Si queremos que dentro de una operación de múltiples operaciones, una se realice antes que otra debemos colocar () entre esas operaciones que se tendrán que realizar antes.
+
+Operador Ternario.
+Si una expresión es true (?) devolverá el valor que le describamos o si es false(:) le devolverá otro valor que queramos.
+Este operador cumpke con una función muy similar al operador de control de flujo "if".
+
+CONTROL DE FLUJO
+Sería el ejemplo de un resumen en forma de arbol donde cada decisión tomará un camino distinto. Ej:
+Acción-> Si es mayor de edad -> Iríamos por aquí.
+      -> Si es menor de edad -> Iríamos por aquí.
+If -> Ejecutar un código sólo cuando se cumpla una condición.
+Else -> Se usa si queremos que nos imprima otro resultado cuando la condición anterior de If por ejemplo, no se cumpla.
+
+Podemos inlcuir a Else la condición If, por ejemplo si quieremos que cuando sea mayor de edad pueda entrar, si es menor o igual de 17 solo pueda entrar con sus padres o si es menor o igual de 13 que no pueda entrar.
+
+Cuando queremos ejecutar una porción de código más de una vez. Entonces usaremos los loops (While, Do while, for, for in, for of)
+
+Loop Infinito
+Siempre que esquivamos un loop hay que tener cuidado de no escribir un loop infinito.
+
+Do While -> En vez de evaluar la condición al comienzo como While, la va a evaluar al final. En resumen, primero ejecuta la porción de código y luego ejecuta la condición.
+
+For -> la diferencia con While es que contiene todo absolutamente todo, dentro de una línea.
 -->
 
 <!DOCTYPE html>
@@ -209,6 +244,6 @@ Se utiliza para ejecutar funciones siempre y cuando la primera haya evaluado en 
 </head>
 <body>
     Hola a todos.
-    <script src="02-Operadores/05-Falsy.js"></cript>
+    <script src="03-Contol-Flujo/06-For.js"></cript>
 </body>
 </html>
